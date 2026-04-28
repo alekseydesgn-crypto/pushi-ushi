@@ -851,6 +851,44 @@
         padding: 16px 28px;
       }
 
+      .contact-btns {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .tg-btn,
+      .wa-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        border: 0;
+        border-radius: 999px;
+        padding: 14px 24px;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        color: #fff;
+        text-decoration: none;
+        box-shadow: var(--shadow);
+        transition: transform 0.24s ease, box-shadow 0.24s ease, filter 0.24s ease;
+      }
+
+      .tg-btn { background: #0088cc; }
+      .wa-btn { background: #25d366; }
+
+      .tg-btn:hover,
+      .wa-btn:hover {
+        transform: translateY(-2px) scale(1.01);
+        filter: brightness(1.06);
+      }
+
+      .modal .tg-btn,
+      .modal .wa-btn {
+        padding: 16px 28px;
+      }
+
       .field {
         width: 100%;
         padding: 12px 14px;
@@ -1882,7 +1920,10 @@
           <span>Pushi Ushi</span>
         </div>
 
-        <div><a href="tel:+18005551234">+1 (800) 555-1234</a></div>
+        <div class="contact-btns">
+          <a class="tg-btn" href="https://t.me/+79014013311">Telegram</a>
+          <a class="wa-btn" href="https://wa.me/79014013311">WhatsApp</a>
+        </div>
 
         <small data-i18n="footerCopy">© 2026 Pushi Ushi. Handmade care for little hearts.</small>
       </div>
@@ -1922,8 +1963,11 @@
         <h3 id="modalHeading" data-i18n="modalHeading">Order</h3>
         <p id="modalLead" data-i18n="modalLead">Contact us to place your order.</p>
         <p><strong id="selectedProduct">Selected toy</strong></p>
-        <p><a href="tel:+18005551234" id="modalPhoneLink">+1 (800) 555-1234</a></p>
-        <a class="call-btn" id="modalCallBtn" href="tel:+18005551234" data-i18n="callNow">Call now</a>
+        <p><a href="tel:+79014013311" id="modalPhoneLink">+7 901 401-33-11</a></p>
+        <div class="contact-btns">
+          <a class="tg-btn" href="https://t.me/+79014013311">Telegram</a>
+          <a class="wa-btn" href="https://wa.me/79014013311">WhatsApp</a>
+        </div>
       </div>
     </div>
 
