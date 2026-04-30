@@ -1667,18 +1667,36 @@
       }
 
       @media (max-width: 640px) {
+        .qv-overlay {
+          align-items: flex-end;
+          padding: 0;
+        }
+
         .qv-modal {
           grid-template-columns: 1fr;
-          max-height: 94vh;
+          max-height: 92dvh;
+          width: 100%;
+          border-radius: 24px 24px 0 0;
+          overflow-y: auto;
+          overflow-x: hidden;
+          transform: translateY(100%);
+        }
+
+        .qv-overlay.visible .qv-modal {
+          transform: translateY(0);
+          opacity: 1;
         }
 
         .qv-modal-img {
-          height: 240px;
+          height: 200px;
           min-height: unset;
+          border-radius: 0;
         }
 
         .qv-modal-body {
-          padding: 24px 20px 28px;
+          padding: 20px 20px max(24px, env(safe-area-inset-bottom, 24px));
+          overflow-y: visible;
+          gap: 10px;
         }
       }
     </style>
