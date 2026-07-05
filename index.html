@@ -924,6 +924,18 @@
         transform: scale(1.15);
       }
 
+      .footer-icon-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        background: linear-gradient(135deg, #3E88FF 0%, #7B4FFF 100%);
+        color: #fff;
+        flex-shrink: 0;
+      }
+
       .footer-phone {
         color: var(--muted);
         font-size: 0.95rem;
@@ -2001,9 +2013,11 @@
               <span>WhatsApp</span>
             </a>
             <a class="footer-icon-link" href="https://max.ru/+79014013311" aria-label="MAX">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12a10 10 0 1 0-17.34 6.82L3 22l3.51-1.15A10 10 0 0 0 22 12Zm-10 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/>
-              </svg>
+              <span class="footer-icon-badge" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12a10 10 0 1 0-17.34 6.82L3 22l3.51-1.15A10 10 0 0 0 22 12Zm-10 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/>
+                </svg>
+              </span>
               <span>MAX</span>
             </a>
             <a class="footer-icon-link" href="mailto:pushitoys@gmail.com" aria-label="Email">
